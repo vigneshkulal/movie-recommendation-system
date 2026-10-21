@@ -1,0 +1,42 @@
+movie_id,title,year,genres,description
+1,Space Journey,2015,"Sci-Fi, Adventure",A crew travels across the galaxy to find a new home for humanity
+2,Galactic Mission,2018,"Sci-Fi, Adventure",A pilot leads a rescue mission to a distant space station
+3,Funny Neighbours,2012,Comedy,Two families in the same street keep playing pranks on each other
+4,Ocean Mystery,2010,"Mystery, Adventure",Divers find a sunken ship and a secret hidden below the sea
+5,Robot Planet,2020,"Sci-Fi, Adventure",A lost robot explores a planet full of machines
+6,Star Voyager,2019,"Sci-Fi, Adventure",A young astronaut joins a voyage to the edge of the galaxy
+7,Alien Frontier,2017,"Sci-Fi, Thriller",Settlers on a distant planet discover an alien signal
+8,Laugh Out Loud,2014,Comedy,A stand-up comedian struggles to make it in a small town
+9,Wedding Chaos,2016,"Comedy, Romance",Everything goes wrong on the day of a big family wedding
+10,Love in Paris,2013,"Romance, Drama",Two strangers meet in Paris and fall in love over one summer
+11,Midnight Detective,2011,"Mystery, Crime",A detective tracks a killer who leaves clues across the city
+12,The Missing Key,2018,"Mystery, Thriller",A teacher finds a key that leads to a missing person case
+13,Deep Sea Treasure,2009,"Adventure, Family",Kids follow an old map to find treasure hidden under the sea
+14,Jungle Run,2015,"Adventure, Action",An explorer races through the jungle to reach a lost temple
+15,Iron Fist City,2016,"Action, Crime",A police officer fights a gang that controls the city
+16,Last Stand,2019,"Action, Thriller",A soldier must protect a witness until the trial begins
+17,Haunted House,2014,"Horror, Mystery",A family moves into an old house with a dark secret
+18,Night Whispers,2021,"Horror, Thriller",Strange voices at night drive a woman to uncover a curse
+19,The Old Garden,2008,Drama,An elderly man looks back on his life while caring for his garden
+20,Broken Strings,2017,"Drama, Music",A violinist tries to rebuild her career after an accident
+21,Dance Dreams,2018,"Music, Romance",A street dancer and a singer start a band together
+22,Cartoon Kingdom,2013,"Animation, Family",Talking animals protect their kingdom from a greedy king
+23,Toy Land,2012,"Animation, Comedy",Toys come alive at night and go on a silly adventure
+24,Space Pups,2020,"Animation, Sci-Fi",Puppies fly a rocket ship to find a missing bone on the moon
+25,Time Loop,2019,"Sci-Fi, Thriller",A scientist relives the same day trying to stop a disaster
+26,Future Cop,2021,"Sci-Fi, Action",A police officer in the year 2100 hunts a rogue android
+27,The Great Heist,2015,"Crime, Thriller",A team of thieves plans one last robbery on a bank
+28,Courtroom Truth,2016,"Drama, Crime",A young lawyer fights to prove her client is innocent
+29,Mountain Escape,2014,"Adventure, Thriller",Hikers get lost in a snowstorm and must find a way down
+30,Cooking Fever,2018,"Comedy, Drama",A failing restaurant gets a new chef and a second chance
+31,Silent Planet,2022,"Sci-Fi, Mystery",An astronaut investigates why a colony on a planet went silent
+32,Super Kids,2017,"Family, Comedy",Three kids discover they have powers and try to hide them
+33,Battle Ground,2013,"War, Action",Two soldiers fight to survive behind enemy lines
+34,Letters from Home,2010,"War, Drama",A soldier writes to his family while far away at war
+35,Magic School,2016,"Fantasy, Family",A girl joins a school where students learn magic
+36,Dragon Realm,2019,"Fantasy, Adventure",A farmer boy sets out to find a dragon and save his village
+37,Cowboy Trail,2007,"Western, Adventure",A lone cowboy rides across the desert chasing an outlaw
+38,Mystery Movie,2020,,
+39,Funny Neighbours,2012,Comedy,Two families in the same street keep playing pranks on each other
+40,Robot Planet,2005,"Sci-Fi, Family",An old robot teaches a boy about friendship on a faraway planet
+41,Unknown Genre Film,2021,,A man wakes up in a strange town and cannot remember anything

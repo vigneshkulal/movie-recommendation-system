@@ -1,0 +1,72 @@
+TC1 | Input: Space Journey
+  Expected: other movies, Sci-Fi/Adventure ranked first
+  Status: ok | Top 4 movies similar to 'Space Journey' (only 4 valid movies available)
+ rank            title  score                                       why
+    1 Galactic Mission  1.000          shared genres: Sci-Fi, Adventure
+    2     Robot Planet  1.000          shared genres: Sci-Fi, Adventure
+    3    Ocean Mystery  0.316                  shared genres: Adventure
+    4 Funny Neighbours  0.000 no shared genres or keywords (weak match)
+  Result: PASS
+
+TC2 | Input: Funny Neighbours
+  Expected: recommendations without Funny Neighbours
+  Status: ok | Top 4 movies similar to 'Funny Neighbours' (only 4 valid movies available)
+ rank            title  score                                       why
+    1    Space Journey    0.0 no shared genres or keywords (weak match)
+    2 Galactic Mission    0.0 no shared genres or keywords (weak match)
+    3    Ocean Mystery    0.0 no shared genres or keywords (weak match)
+    4     Robot Planet    0.0 no shared genres or keywords (weak match)
+  Result: PASS
+
+TC3 | Input: Some Random Movie
+  Expected: clear not-found message
+  Status: not_found | Movie 'Some Random Movie' was not found in the dataset.
+  Result: PASS
+
+TC4 | Input: No Genre Film (missing genres)
+  Expected: handled gracefully, no crash
+  Status: no_metadata | 'No Genre Film' has no genres or description, so similar movies cannot be calculated.
+  Result: PASS
+
+TC5 | Input: Ocean Mystery (only 4 other movies in dataset)
+  Expected: return only available recommendations, not padded to 5
+  Status: ok | Top 4 movies similar to 'Ocean Mystery' (only 4 valid movies available)
+ rank            title  score                                       why
+    1    Space Journey  0.316                  shared genres: Adventure
+    2 Galactic Mission  0.316                  shared genres: Adventure
+    3     Robot Planet  0.316                  shared genres: Adventure
+    4 Funny Neighbours  0.000 no shared genres or keywords (weak match)
+  Result: PASS
+
+TC6 | Input: Space Journey (dataset has duplicate titles)
+  Expected: exact duplicates removed, same-title movies disambiguated
+  Status: ok | Top 5 movies similar to 'Space Journey'
+ rank               title  score                                       why
+    1    Galactic Mission  1.000          shared genres: Sci-Fi, Adventure
+    2 Robot Planet (id 5)  1.000          shared genres: Sci-Fi, Adventure
+    3       Ocean Mystery  0.361                  shared genres: Adventure
+    4 Robot Planet (id 7)  0.361                     shared genres: Sci-Fi
+    5    Funny Neighbours  0.000 no shared genres or keywords (weak match)
+  Result: PASS
+
+--- Full dataset sample (data/movies.csv) ---
+
+Top 5 movies similar to 'Space Journey'
+ rank               title  score                                                       why
+    1        Star Voyager  0.422 shared genres: Sci-Fi, Adventure; common keywords: galaxy
+    2 Robot Planet (2020)  0.347                          shared genres: Sci-Fi, Adventure
+    3    Galactic Mission  0.295                          shared genres: Sci-Fi, Adventure
+    4     Mountain Escape  0.167                                  shared genres: Adventure
+    5      Alien Frontier  0.162                                     shared genres: Sci-Fi
+
+Top 5 movies similar to 'Funny Neighbours'
+ rank          title  score                   why
+    1 Laugh Out Loud  0.286 shared genres: Comedy
+    2     Super Kids  0.279 shared genres: Comedy
+    3       Toy Land  0.254 shared genres: Comedy
+    4  Wedding Chaos  0.253 shared genres: Comedy
+    5  Cooking Fever  0.244 shared genres: Comedy
+
+'Mystery Movie' has no genres or description, so similar movies cannot be calculated.
+
+Summary: 6/6 test cases passed
