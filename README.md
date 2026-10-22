@@ -53,10 +53,6 @@ python -m streamlit run app.py
 
 ---
 
-### Step 3: Open the Web Application
-Once launched, the app will automatically open in your default browser. If it doesn't open automatically, navigate to:
--> **[http://localhost:8501](http://localhost:8501)**
-
 > **Note / Troubleshooting:**
 > - To **stop** the application: Press `Ctrl + C` in the terminal.
 > - If port 8501 is already in use by another app, you can launch on port 8502:
