@@ -257,9 +257,23 @@ if os.path.exists(bg_path):
     set_background(bg_path)
 
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def get_data_path():
+    candidates = [
+        os.path.join(BASE_DIR, "data", "movies.csv"),
+        os.path.join(BASE_DIR, "movies.csv"),
+        os.path.abspath("data/movies.csv"),
+        os.path.abspath("movies.csv"),
+    ]
+    for p in candidates:
+        if os.path.exists(p):
+            return p
+    return os.path.join(BASE_DIR, "data", "movies.csv")
+
 @st.cache_resource
 def get_model():
-    return load("movies.csv")
+    return load(get_data_path())
 
 
 rec = get_model()
