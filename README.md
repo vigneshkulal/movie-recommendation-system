@@ -31,7 +31,13 @@ each with a short reason why it was recommended.
 ---
 
 ### Step 1: Install Required Packages
-Open your terminal (PowerShell, Command Prompt, or Bash) in this project directory and run:
+> **Note for ZIP downloads:** If you downloaded this repository as a `.zip` file and extracted it, your files may be in a nested folder (e.g. `movie-recommendation-system-main/movie-recommendation-system-main`). Make sure your terminal is inside the folder containing `app.py` and `requirements.txt`:
+> ```bash
+> cd movie-recommendation-system-main
+> ```
+> *(If you see `File does not exist: app.py`, check your directory with `dir` or `ls`).*
+
+Open your terminal (PowerShell, Command Prompt, or Bash) in the project directory and run:
 ```bash
 pip install -r requirements.txt
 ```
@@ -47,6 +53,9 @@ python -m streamlit run app.py
 
 ---
 
+### Step 3: Open the Web Application
+Once launched, the app will automatically open in your default browser. If it doesn't open automatically, navigate to:
+-> **[http://localhost:8501](http://localhost:8501)**
 
 > **Note / Troubleshooting:**
 > - To **stop** the application: Press `Ctrl + C` in the terminal.
