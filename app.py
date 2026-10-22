@@ -259,7 +259,7 @@ if os.path.exists(bg_path):
 
 @st.cache_resource
 def get_model():
-    return load("data/movies.csv")
+    return load("movies.csv")
 
 
 rec = get_model()
